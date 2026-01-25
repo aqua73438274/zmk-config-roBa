@@ -19,7 +19,6 @@
     //         <&kp LEFT_ARROW>,
     //         <&kp UP_ARROW>,
     //         <&kp DOWN_ARROW>;
-
     //     tick = <10>;
     //     wait-ms = <5>;
     //     tap-ms = <5>;
@@ -81,13 +80,11 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R                        &kp T                                                          &kp Y        &kp U  &lt 5 I    &kp O    &kp P
-&kp A             &kp S         &kp D         &kp F                        &kp G        &kp LS(LG(S))                      &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp SQT
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                        &kp B        &kp COLON                          &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 INT_HENKAN  &lt 2 SPACE  &lt_to_layer_0 3 INT_MUHENKAN      &kp BACKSPACE  &lt 1 ENTER                             &kp DEL
+&kp X           &lt 6 D         &kp K             &kp B        &kp Z                                            &kp J          &kp F        &kp O             &lt 6 U         &kp Q
+&mt LEFT_GUI H  &mt LEFT_ALT R  &mt LEFT_SHIFT S  &mt LCTRL T  &kp G        &kp AT_SIGN         &kp MINUS       &kp Y          &mt LCTRL N  &mt LEFT_SHIFT A  &mt LEFT_ALT I  &mt LEFT_GUI E
+&kp P           &kp L           &kp C             &kp M        &kp V        &kp COLON           &kp SEMICOLON   &kp SEMICOLON  &kp W        &mkp MB1          &lt 5 COMMA     &kp PERIOD
+&kp AT_SIGN     &kp LEFT_WIN    &kp LEFT_ALT      &lt 1 MINUS  &lt 2 SPACE  &lt 5 C_REPEAT      &lt 1 C_REPEAT  &lt 3 ENTER                                                   &kp DEL
             >;
-
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
         };
 
         FUNCTION {
