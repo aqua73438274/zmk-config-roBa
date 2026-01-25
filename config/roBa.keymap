@@ -62,6 +62,13 @@
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
+
+        SRCHSEL: SRCHSEL {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(C) &kp LC(T) &kp LC(V)>;
+            label = "SRCHSEL";
+        };
     };
 
     behaviors {
@@ -107,13 +114,11 @@
 
         ARROW {
             bindings = <
-&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                       &trans  &trans  &trans  &trans  &trans
-&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                          &trans
+&kp LG(LC(F4))  &kp LC(END)      &kp UP_ARROW    &kp LC(HOME)       &kp LC(W)                                        &SRCHSEL                &kp LA(LEFT_ARROW)  &kp UP_ARROW       &kp LA(UP_ARROW)  &kp LG(LC(D))
+&kp LEFT_GUI    &kp LEFT_ALT     &kp LEFT_SHIFT  &kp LCTRL          &kp ENTER  &kp LC(D)            &kp LC(TAB)      &kp HOME                &kp LEFT_ARROW      &kp DOWN           &kp RIGHT         &kp END
+&kp ESCAPE      &kp LC(LS(TAB))  &kp F5          &kp LC(TAB)        &kp LC(K)  &kp LG(TAB)          &kp LS(LC(TAB))  &kp LG(LC(LEFT_ARROW))  &kp PG_UP           &kp K_APPLICATION  &kp PAGE_DOWN     &kp LC(LG(RIGHT_ARROW))
+&trans          &trans           &trans          &kp LC(PAGE_DOWN)  &to 3      &kp LC(PAGE_UP)      &to 0            &kp ENTER                                                                        &trans
             >;
-
-            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
         };
 
         MOUSE {
