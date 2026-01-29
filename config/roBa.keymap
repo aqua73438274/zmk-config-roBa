@@ -53,6 +53,16 @@
             bindings = <&kp EQUAL>;
             key-positions = <24 25>;
         };
+
+        backSpack {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <18 19>;
+        };
+
+        del {
+            bindings = <&kp DELETE>;
+            key-positions = <20 19>;
+        };
     };
 
     macros {
@@ -130,10 +140,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
+&trans  &trans  &trans  &trans  &trans                      &trans    &trans    &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &mkp MB5  &trans    &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &mkp MB4  &mkp MB3  &mkp MB1  &mkp MB2  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                  &trans
             >;
         };
 
@@ -152,6 +162,15 @@
 &trans        &trans        &trans        &trans        &trans        &trans      &trans       &trans        &trans        &trans        &trans        &trans
 &trans        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans        &trans      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
 &trans        &trans        &trans        &trans        &trans        &trans      &trans       &trans                                                  &bt BT_CLR_ALL
+            >;
+        };
+
+        layer_7 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
         };
     };
