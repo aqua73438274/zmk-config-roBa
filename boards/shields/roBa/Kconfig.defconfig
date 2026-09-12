@@ -9,6 +9,9 @@ config ZMK_SPLIT
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
+config MAIN_STACK_SIZE
+    default 2048
+
 endif
 
 if SHIELD_ROBA_L
