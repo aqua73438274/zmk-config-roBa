@@ -8,6 +8,10 @@ manifest:
     - name: kumamuk-git
       url-base: https://github.com/kumamuk-git
   projects:
+    - name: zmk-feature-runtime-combo
+      remote: cormoran
+      revision: main
+      import: true
     # ZMK: DYA Studio 用カスタム RPC サブシステム付き cormoran fork
     - name: zmk
       remote: cormoran
@@ -31,10 +35,6 @@ manifest:
     - name: zmk-module-runtime-input-processor
       remote: cormoran
       revision: zmk-v0.3.0.0
-    - name: zmk-feature-runtime-combo
-      remote: cormoran
-      revision: main
-      import: true
 
     # その他のモジュール（トラックボールドライバー、LED ウィジェット等）
     # ...
