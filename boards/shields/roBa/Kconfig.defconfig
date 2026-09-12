@@ -3,9 +3,6 @@ if SHIELD_ROBA_R
 config ZMK_KEYBOARD_NAME
     default "roBa_R"
 
-config ZMK_SPLIT
-    default y
-
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
@@ -16,7 +13,13 @@ if SHIELD_ROBA_L
 config ZMK_KEYBOARD_NAME
     default "roBa_L"
 
+endif
+
+
+if SHIELD_ROBA_R || SHIELD_ROBA_L
 config ZMK_SPLIT
     default y
 
+config ZMK_KSCAN_CHARLIEPLEX_WAIT_BEFORE_INPUTS
+    default 20
 endif
