@@ -62,5 +62,13 @@ manifest:
     - name: zmk-feature-kscan-diagnostics
     - name: zmk-feature-watchdog
     - name: zmk-feature-fast-keymap
+    - name: zmk-helpers
+      remote: urob
+      revision: main
+    # urob leader-key モジュール (ZMK main 未収録機能をモジュール提供)
+    # urob 推奨: revision は ZMK 本体 (上の zmk project) と揃える
+    - name: zmk-leader-key
+      remote: urob
+      revision: main
   self:
     path: config
